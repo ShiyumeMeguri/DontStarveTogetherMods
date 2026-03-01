@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="swap_body">
+		<file id="0" name="swap_body/swap_body-0.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="1" name="swap_body/swap_body-1.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="2" name="swap_body/swap_body-2.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="3" name="swap_body/swap_body-3.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="4" name="swap_body/swap_body-4.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="5" name="swap_body/swap_body-5.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="6" name="swap_body/swap_body-6.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="7" name="swap_body/swap_body-7.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+		<file id="8" name="swap_body/swap_body-8.png" width="400" height="400" pivot_x="0.5" pivot_y="0.35" />
+	</folder>
+	<entity id="0" name="uyoku">
+		<animation id="0" name="anim" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="swap_body" abs_x="0" abs_y="0" abs_pivot_x="0.463836" abs_pivot_y="0.258753" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="swap_body" abs_x="0" abs_y="0" abs_pivot_x="0.463836" abs_pivot_y="0.258753" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+		</animation>
+	</entity>
+</spriter_data>

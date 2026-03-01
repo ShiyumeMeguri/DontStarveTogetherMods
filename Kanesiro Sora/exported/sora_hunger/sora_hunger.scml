@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="hunger_level">
+		<file id="0" name="hunger_level/hunger_level-0.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="1" name="hunger_level/hunger_level-1.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="2" name="hunger_level/hunger_level-2.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="3" name="hunger_level/hunger_level-3.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="4" name="hunger_level/hunger_level-4.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="5" name="hunger_level/hunger_level-5.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="6" name="hunger_level/hunger_level-6.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="7" name="hunger_level/hunger_level-7.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="8" name="hunger_level/hunger_level-8.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="9" name="hunger_level/hunger_level-9.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="10" name="hunger_level/hunger_level-10.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="11" name="hunger_level/hunger_level-11.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="12" name="hunger_level/hunger_level-12.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="13" name="hunger_level/hunger_level-13.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="14" name="hunger_level/hunger_level-14.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="15" name="hunger_level/hunger_level-15.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="16" name="hunger_level/hunger_level-16.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="17" name="hunger_level/hunger_level-17.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="18" name="hunger_level/hunger_level-18.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="19" name="hunger_level/hunger_level-19.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="20" name="hunger_level/hunger_level-20.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+		<file id="21" name="hunger_level/hunger_level-21.png" width="768" height="48" pivot_x="0.5" pivot_y="0.5" />
+	</folder>
+	<entity id="0" name="hunger">
+		<animation id="0" name="anim" length="767">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="17" time="567">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="19" time="634">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="20" time="667">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="22" time="734">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+				<key id="23" time="767">
+					<object_ref id="1" name="hunger_level" abs_x="0" abs_y="0" abs_pivot_x="0.5" abs_pivot_y="0.5" />
+				</key>
+			</mainline>
+			<timeline id="0" name="hunger_level">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="4" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="5" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="6" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="7" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="8" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="9" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="0" file="10" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="11" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="0" file="12" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="0" file="13" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="0" file="14" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="0" file="15" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="0" file="16" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="0" file="17" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="0" file="18" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="19" time="634" spin="1">
+					<object folder="0" file="19" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="20" time="667" spin="1">
+					<object folder="0" file="20" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="21" time="700" spin="1">
+					<object folder="0" file="21" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="0" file="21" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="23" time="767" spin="1">
+					<object folder="0" file="21" x="0" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

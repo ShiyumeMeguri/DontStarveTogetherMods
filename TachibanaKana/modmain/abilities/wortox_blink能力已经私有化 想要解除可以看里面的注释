@@ -1,0 +1,110 @@
+AddGamePostInit(function()
+    AAB_ReplaceCharacterLines("wortox")
+end)
+
+AAB_ActivateSkills("wortox")
+
+AAB_AddClickAction(function(inst, target, pos, useitem, right, bufs)
+    if #bufs <= 0
+        and right
+        and not target
+        and not useitem
+    then
+        local canblink
+        if inst.checkingmapactions then
+            canblink = inst.CanBlinkFromWithMap(inst:GetPosition())
+        else
+            canblink = inst.CanBlinkTo(pos)
+        end
+        if canblink and inst.CanSoulhop and inst:CanSoulhop() then
+            return ACTIONS.BLINK
+        end
+    end
+end)
+
+----------------------------------------------------------------------------------------------------
+
+local function CanBlinkTo(pt)
+    return TheWorld.Map:IsPassableAtPoint(pt:Get()) and not TheWorld.Map:IsGroundTargetBlocked(pt) -- NOTES(JBK): Keep in sync with blinkstaff. [BATELE]
+end
+
+local function CanBlinkFromWithMap(pt)
+    return true -- NOTES(JBK): Change this if there is a reason to anchor Wortox when trying to use the map to teleport.
+end
+
+local function ReticuleTargetFn(inst)
+    return ControllerReticle_Blink_GetPosition(inst, inst.CanBlinkTo)
+end
+
+local function CanSoulhop(inst, souls)
+    if inst.replica.hunger and inst.replica.hunger:GetCurrent() >= (souls or 1) * 5 then
+        local rider = inst.replica.rider
+        if rider == nil or not rider:IsRiding() then
+            return true
+        end
+    end
+    return false
+end
+
+local function TryToPortalHop(inst, souls, consumeall)
+    local cost = (souls or 1) * 5
+    if inst.components.hunger.current < cost then
+        return false
+    end
+
+    inst.components.hunger:DoDelta(-cost)
+
+    return true
+end
+
+
+
+
+	 --- if inst.prefab == "wortox" then return end   如果当前人物是沃拓克斯 恶魔人 那么下面的代码无效  下面的代码很可能是为了解决和恶魔人技能冲突而设定的 因为不是 恶魔人的人物是用饱食度来换取瞬移功能的  所以推测 下面的代码是让非恶魔人的人物用另一种方式 瞬移  
+	  --和我推测的一样 如果取消上面的代码  恶魔人就只能和普通人物一样靠饱食度飞行
+	  
+	AddPlayerPostInit(function(inst)  ---这个代码必须启动  否则 选 非 恶魔人角色会导致 无法从新选非恶魔人的人物
+		--- if inst.prefab  ~= "kana" then return end 不行 这样无法控制  ---如果当前人物是不是 kana  那么这个技能就失效
+	   if inst.prefab == "wortox" then return end  ---如果当前人物是沃拓克斯 恶魔人 那么下面的代码无效  下面的代码很可能是为了解决和恶魔人技能冲突而设定的 因为不是 恶魔人的人物是用饱食度来换取瞬移功能的  所以推测 下面的代码是让非恶魔人的人物用另一种方式 瞬移  
+	  --和我推测的一样 如果取消上面的代码  恶魔人就只能和普通人物一样靠饱食度飞行
+	  
+	  
+        -- 终于 成功了  这个代码限制 只能是kana这个名称的人物使用 这个关键的代码   如下两个就是 
+		 if inst.prefab == "kana" then
+			inst:AddTag("soulstealer")   --- 试试看能否屏蔽 不影响   好像成功了  除了 恶魔人 都无法飞了 
+			inst.CanSoulhop = CanSoulhop-- --- 试试看能否屏蔽 不影响   用灵魂回复血量    好像成功了  除了 恶魔人 都无法飞了 --  这个开启后 可以右键 有瞬移提示 但是做不到 地图也有提示但是也做不到 
+		 end 
+		 -- 终于 成功了  这个代码限制 只能是kana这个名称的人物使用 这个关键的代码   如下两个就是 
+		 
+		 
+		   inst.CanBlinkTo = CanBlinkTo -- 不能屏蔽 会报错
+			
+			
+			
+			inst.CanBlinkFromWithMap = CanBlinkFromWithMap
+			if not inst.components.reticule then
+				inst:AddComponent("reticule")
+			end
+			inst.components.reticule.targetfn = ReticuleTargetFn
+			inst.components.reticule.ease = true
+			if not TheWorld.ismastersim then return end
+	        inst.TryToPortalHop = TryToPortalHop
+			inst.DoCheckSoulsAdded = function() end
+			
+			
+			
+			
+			
+		
+		
+		
+
+		
+	end)
+	
+	
+ ---如果当前人物是沃拓克斯 恶魔人 那么下面的代码无效  下面的代码很可能是为了解决和恶魔人技能冲突而设定的 因为不是 恶魔人的人物是用饱食度来换取瞬移功能的  所以推测 下面的代码是让非恶魔人的人物用另一种方式 瞬移  
+  --和我推测的一样 如果取消上面的代码  恶魔人就只能和普通人物一样靠饱食度飞行
+  
+
+

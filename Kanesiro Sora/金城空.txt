@@ -1,0 +1,96 @@
+ThePlayer.components.age:GetDebugString() 查看年齡 天為單位
+ThePlayer.components.age:GetAge()查看年齡 秒為單位
+ThePlayer:PushEvent("yawn", { grogginess = 30 }) 當場睡覺
+
+health = ヘルス
+sanity = 正気度　しょうきど
+hunger = 飢餓	きが
+inst.components.talker:Say("")
+
+ThePlayer.level = 30
+ThePlayer.seisin = false
+
+GetPlayer().components.builder:GiveAllRecipes()
+
+防水材料
+        inst:AddComponent("waterproofer")
+        inst.components.waterproofer:SetEffectiveness(TUNING.WATERPROOFNESS_SMALL)
+
+1－擊殺掉落 よく出来ました 貼紙 √
+
+
+2－界面羽毛飄落 √
+
+
+3－專屬圖標 生命＋飢餓＋精神＋睡眠需求 √
+
+
+4－專屬小學生背包
+
+
+5－需要充足睡眠－3天至少睡一次 √
+
+
+6－攻擊70% 防禦130% √
+
+
+7－在同伴身邊提供精神回复加成 √
+
+
+8－鳥不會害怕自己 √
+
+10- 需要畫的圖標
+-----------------------------------
+貼紙							√
+羽毛							√
+(專屬圖標x4)x2					
+小學生背包						
+彼岸花							
+コロッケ							√
+羊ぬいぐるみ						√
+熊ぬいぐるみ						√
+兎ぬいぐるみ						√
+猫帽							√
+水着							
+等身抱枕							
+專屬聖誕套裝						
+-----------------------------------
+
+反轉能力
+攻擊 130% 防禦 75%
+無需睡眠
+界面彼岸花掉落
+專屬反轉圖標 生命＋飢餓＋精神
+在同伴身邊無精神回复加成
+只能吃肉
+
+9－合成表
+
+yoku－2=石頭1
+
+yoku－10=コロッケ 飢餓10 生命15
+
+
+yoku－8 缝纫包 1 蜘蛛絲20 =羊ぬいぐるみ 回血每分鐘1 速度-5% 精神每分鐘+6 可修復 耐久30分鐘
+
+
+yoku－12 缝纫包 1 蜘蛛絲25 =熊ぬいぐるみ 攻擊120% 速度-10% 防禦+10% 精神每分鐘+3 可修復 耐久35分鐘
+
+
+yoku－10 缝纫包 1 蜘蛛絲12 =兎ぬいぐるみ 速度+30% 攻擊-20% 精神每分鐘+6 可修復 耐久25分鐘
+
+
+yoku－30 高禮帽 1 =猫帽 速度20% 防水60%  可修復
+
+
+yoku－30 水球 4 waterballoon =水着 清涼70%  可修復
+
+
+yoku－30 缝纫包 2 =等身抱枕 當場睡覺 放置物 相當於帳篷 使用次數 20
+
+
+yoku－100 = 專屬聖誕套裝 禦寒90% 耐久10小時
+
+
+等級機能未開放
+
